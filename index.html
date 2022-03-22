@@ -4,38 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>William Skillas' Portfolio</title> <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Example's Portfolio</title> <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>    
-        <h1 >William Michele Skillas' Portfolio</h1>
-        <!--Add A photo of myself--><!--Use flexbox, media queries, and CSS variables-->
+    <header>
+           
+        <h1 >Example's Portfolio</h1>
+       
+        <!--Use flexbox, media queries, and CSS variables-->
         <main>
-         <ul>  
-            <li a href="">About</li>
-            <li a href="">Projects</li>
-            <li a href="">Contact Info</li>
-        </ul>
-        </main>
+         <nav>  
+            <a href="#about">About</a>
+            <a href="./assets/docs/William Michele Skillas Resume.pdf.docx">Resume</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Info</a>
+            <!--Make list actually click and to the spots of the page-->
+         </nav>
+        </main><img id="face" src="./assets/images/20210828_222823.jpg" alt="William.img">
     </header>
     <main>
-        <img id="face" src="./assets/images/20210828_222823.jpg" alt="William.img">
-        <section>
+        <div id="under-head-img" class="blue-img"></div>
+       
+        <section id="about"  class="tag-left">
            <h2>About Me</h2>
-            <p>wowowowowowowowowowowowowowowowowowowowowowowowowowowowowowowowowowowowowowow<!--Add info about myself--></p>
+            <p id="ptext">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam neque velit, varius vitae dapibus a, suscipit quis massa. Phasellus feugiat arcu risus, eu facilisis leo egestas id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse mi sem, condimentum ac risus sed, maximus dapibus augue. Duis maximus tincidunt tortor ut tempus. Aliquam nisl nisi, tincidunt id scelerisque quis, porta pulvinar mi. Morbi commodo at ligula sit amet consectetur. Vivamus non erat ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pellentesque risus placerat arcu iaculis facilisis.
+            </p>
         </section>
-        <section>
+        <section id="projects"  class="tag-left">
             <h2>Projects</h2>
+            <div class="container">
+
+            <a href="https://wmskillas.github.io/Homework-1/" id="big-img" class="html-img">
+                <div class="img-text">
+                    <h3>Semantic Html</h3>
+                    <h4>Html and CSS</h4>
+                </div>
+            </a>    
+
+            <a href="https://www.w3schools.com/nodejs/nodejs_intro.asp" class="img led-img">  
+                <div class="img-text">
+                    <h3>Led Wall</h3>
+                    <h4>Node and Iot</h4>
+                </div>
+            </a>
+            <a href="https://www.w3schools.com/whatis/whatis_react.asp" class="img calc-img">
+                <div class="img-text">       
+                    <h3>Calculator</h3>
+                    <h4>React, Java, and CSS</h4>
+                </div>
+            </a>
+            <a href="https://www.w3schools.com/whatis/whatis_frontenddev.asp" class="img cloud-img">
+                <div class="img-text">
+                    <h3>Clouds</h3>
+                    <h4>Mern Stack</h4>
+                </div>
+            </a>
+            <a href="https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp" class="img pastel-img">
+                <div class="img-text">
+                    <h3>Pastels</h3>
+                    <h4>MongoDB</h4>
+                </div>
+            </a>
+            </section>
             <!--Show 5 projects Main 1 larger than the other 4-->
         </section>
     </main>
-    <footer>
+    <footer id="contact" >
         <h2>Contact Information</h2>
-        <ul>
-            <li>Email</li>
-            <li>LinkedIn</li>
-            <li>Github</li>
-        </ul>
+        <nav class="fo-ot-er">
+            <a class="fo-ot-er" href="mailto:wmskillas@gmail.com">Email</a>
+            <a class="fo-ot-er" href="tel:+1770-401-2902">Phone Number</a>
+            <a class="fo-ot-er" href="https://github.com/wmskillas">Github</a>
+            <a class="fo-ot-er" href="https://www.linkedin.com/">LinkedIn</a>
+        </nav>
     </footer>
 </body>
 </html>
+<!-- led wall pic credit:Photo by <a href="https://unsplash.com/@luki90pl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Łukasz Nieścioruk</a> on <a href="https://unsplash.com/s/photos/red-led?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+<!--Cloud pic credit: Photo by <a href="https://unsplash.com/@maartenscheer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maarten Scheer</a> on <a href="https://unsplash.com/s/photos/surf-report?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+<!--Calculator pic credit:Photo by <a href="https://unsplash.com/@stm_2790?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sumudu Mohottige</a> on <a href="https://unsplash.com/s/photos/calculator?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+<!--Pastel pic credit: Photo by <a href="https://unsplash.com/@nervum?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jack B</a> on <a href="https://unsplash.com/s/photos/pastel-puzzel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+<!--html pic credit:Photo by <a href="https://unsplash.com/@florianolv?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Florian Olivo</a> on <a href="https://unsplash.com/s/photos/html?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->

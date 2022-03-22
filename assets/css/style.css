@@ -1,40 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 :root {
-    --Lightgrey: rgb(156, 156, 156);
-    --gray: gray;
-    --darkgray: rgb(87, 87, 87);
-    --white: white;
-    --blue: rgb(66, 66, 202);
-    --purple: rgb(92, 1, 92);
+    --grayblue: rgba(68, 88, 119, 1);
+    --lightblue: rgba(146, 204, 206, 1);
+    --blueblack: rgba(49, 52, 61, 1);
+    --dark: rgb(54, 51, 51);
+    --white: rgb(255, 255, 255);
 }
-header {
-    background-color: var(--darkgray);
-    color: var(--white);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 20px;
-
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: 20px;
+    background-color: var(--white);
+    color: var(--grayblue);
+    line-height: 1.3;
 }
-header h1{
+header {  
+    background-color: var(--dark);
     display: flex;
     flex-wrap: wrap;
-    font-size: 35px;
-
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
 }
-head main ul{
+h1 {
+    margin: 0;
+    text-align: left;
+    color: var(--blueblack);
+    background-color:var(--lightblue);
+    font-size: 40px;
+}
+nav {
     margin: 10px;
-    padding: 5px;
+    padding: 40px;
 }
-header main ul li {
+nav a {
     float: right;
-    margin: 0 20px;
-    color: var(--Lightgrey);
+    margin: 35px;
+    color: var(--lightblue);
     display: flex;
     flex-wrap: wrap;
+    justify-content:flex-end;
+    background: none;
+}
+h2 {
+    color: var(--grayblue);
+    margin: 0;
+    text-decoration: underline solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+}
+p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 #face {
-    height: 150px;
+    height: 145px;
     display:flex;
     flex-wrap: wrap;
+    justify-content:flex-end;
+    margin: 20px;
 }
 main h2{
     display: block;
+}
+h3{
+    margin: 0;
+}
+.container {
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+#big-img{
+    min-height: 600px;
+    min-width: 1320px;
+    margin: 5px;
+    border: 5px solid;
+    border-color: var(--lightblue);
+    text-decoration: none;
+    background-blend-mode:exclusion;
+    display: flex;
+    align-items: flex-end;
+}
+#big-img:hover{
+    background-color: rgba(0, 0, 0, 0);
+}
+.img{
+    max-height:fit-content ;
+    max-width:fit-content;
+    min-height: 200px;
+    min-width: 650px;
+    margin: 5px;
+    border: 5px solid;
+    border-color: var(--lightblue);
+    text-decoration: none;
+    background-blend-mode:exclusion;
+    display: flex;
+    align-items: flex-end;
+}
+a {
+    background-color: var(--grayblue);
+ }
+h3 h4{
+    border: 5px;
+    border-color: var(--lightblue);
+}
+.img:hover{
+    background-color: rgba(0, 0, 0, 0);
+    }
+.tag-left{
+    margin: 20px 30px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content:space-between;
+    
+}
+.blue-img{
+    background-image: url("../images/blue.jpg");
+    display: block;
+}
+.html-img {
+    background-image:url("../images/html.jpg");
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.led-img{
+    background-image: url("../images/ledwall.jpg");
+    display: flex;
+    flex-wrap: wrap;
+}
+.calc-img{
+    background-image: url("../images/calculator.jpg");
+    display: flex;
+    flex-wrap: wrap;
+}
+.cloud-img{
+    background-image: url("../images/cloud.jpg");
+    display: flex;
+    flex-wrap: wrap;
+}
+.pastel-img{
+    background-image: url("../images/pastel.jpg");
+    display: flex;
+    flex-wrap: wrap;
+}
+.fo-ot-er{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: var(--blueblack);
+    justify-content: center;
+    text-decoration: underline 3px;
+    
+}
+.img-text{
+    color: var(--blueblack);
+    background-color: var(--lightblue);
+}
+#under-head-img{
+    min-height: 150px;
+    margin: 0;
+}
+#ptext{
+    margin: 10px;
+    padding-left: 150px;
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 992px) {
+    header{
+        background-color: black;
+    } 
+    body{
+        background-color: gray;
+    }
+    p{
+        color: darkblue;
+    }
+    h2 {
+        color: darkblue;
+    }
 }
